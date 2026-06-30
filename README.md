@@ -1,7 +1,7 @@
 # Actor Films Dimensional Data Modeling
 
-This project is a dimensional data modeling assignment built with PostgreSQL.
-The goal is to transform an `actor_films` dataset into analytics-friendly tables using cumulative table design and Slowly Changing Dimension Type 2 modeling.
+This project is a **dimensional data modeling** assignment built with **PostgreSQL**.
+The goal is to transform an `actor_films` dataset into analytics-friendly tables using **cumulative table design** and **Slowly Changing Dimension Type 2** modeling.
 
 The project focuses on modeling actor performance over time based on film ratings, activity status, and historical changes.
 
