@@ -163,9 +163,48 @@ The final tables can answer questions such as:
 
 1. Start PostgreSQL and pgAdmin using Docker.
 
-2. Open pgAdmin and connect to the PostgreSQL database.
+Docker Setup:
 
-3. Make sure the original `actor_films` table exists.
+This project was developed with PostgreSQL and pgAdmin running in Docker.
+
+The original course environment used a `data.dump` file, but this repository includes only the required `actor_films.csv` dataset for easier reproduction.
+
+Start the containers with:
+
+```bash
+docker compose up -d
+```
+
+Then open pgAdmin at:
+
+http://localhost:5050
+
+Email: admin@example.com
+Password: admin
+
+
+
+2. Create the source table:
+
+```sql
+CREATE TABLE actor_films (
+    actor TEXT,
+    actorid TEXT,
+    film TEXT,
+    year INTEGER,
+    votes INTEGER,
+    rating DOUBLE PRECISION,
+    filmid TEXT
+);
+```
+
+3. Import the CSV file from:
+
+```text
+data/actor_films.csv
+```
+
+into the actor_films table using pgAdmin's Import/Export tool.
 
 4. Run the SQL files in this order:
 

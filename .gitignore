@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Environment variables
+.env
+
+# PostgreSQL backups
+*.dump
+*.backup
+
+# Logs
+*.log
+
+# IDE settings
+.vscode/
+.idea/
+
+# Python cache 
+__pycache__/
+*.pyc
