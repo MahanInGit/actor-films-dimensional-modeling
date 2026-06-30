@@ -168,13 +168,13 @@ The final tables can answer questions such as:
 
 ## How to Run
 
-1. Start PostgreSQL and pgAdmin using Docker.
+### 1. Start PostgreSQL and pgAdmin using Docker.
 
 Docker Setup:
 
 This project was developed with PostgreSQL and pgAdmin running in Docker.
 
-The original course environment used a `data.dump` file, but this repository includes only the required `actor_films.csv` dataset for easier reproduction.
+The original environment used a `data.dump` file, but this repository includes only the required `actor_films.csv` dataset for easier reproduction.
 
 Start the containers with:
 
@@ -187,11 +187,10 @@ Then open pgAdmin at:
 http://localhost:5050
 
 Email: admin@example.com
+
 Password: admin
 
-
-
-2. Create the source table:
+### 2. Create the source table:
 
 ```sql
 CREATE TABLE actor_films (
@@ -205,7 +204,7 @@ CREATE TABLE actor_films (
 );
 ```
 
-3. Import the CSV file from:
+### 3. Import the CSV file from:
 
 ```text
 data/actor_films.csv
@@ -213,7 +212,7 @@ data/actor_films.csv
 
 into the actor_films table using pgAdmin's Import/Export tool.
 
-4. Run the SQL files in this order:
+### 4. Run the SQL files in this order:
 
 ```text
 01_create_types.sql
