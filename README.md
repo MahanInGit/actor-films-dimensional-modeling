@@ -40,6 +40,8 @@ The `quality_class` is calculated based on the average rating of films from the 
 | average       | Average rating > 6 and <= 7 |
 | bad           | Average rating <= 6         |
 
+![Actors Table](images/actors_table_preview.png)
+
 ### 2. `actors_history_scd`
 
 A Slowly Changing Dimension Type 2 table that tracks changes in:
@@ -54,6 +56,8 @@ This table stores historical periods using:
 * `current_year`
 
 This makes it possible to analyze how an actor's status changed over time.
+
+![Actors History SCD](images/actors_history_scd_preview.png)
 
 ## Technologies Used
 
