@@ -77,6 +77,9 @@ actor-films-dimensional-modeling/
 ├── docker-compose.yml
 ├── .gitignore
 │
+├── data/
+│   └── actor_films.csv
+│
 ├── sql/
 │   ├── 01_create_types.sql
 │   ├── 02_create_actors_table.sql
@@ -86,8 +89,8 @@ actor-films-dimensional-modeling/
 │   └── 06_incremental_actors_history_scd.sql
 │
 ├── sample_outputs/
-│   ├── actors_sample.csv
-│   └── actors_history_scd_sample.csv
+│   ├── actors_1000_samples.csv
+│   └── actors_history_scd_1000_samples.csv
 │
 └── images/
     ├── actors_table_preview.png
